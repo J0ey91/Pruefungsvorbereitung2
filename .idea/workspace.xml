@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="asd">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DataClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Arrays1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exam2023_Joey.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exam2023_Lucas.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Example_Functions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Example_LinkedList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Example_MapsSetsHAshes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Example_mapsSetsHasehs2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HDI Nachhilfe.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/homework_four_Joey.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/homework_one_Joey.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/homework_one_Lucas.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/homework_two_Joey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -27,15 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683881494251</updated>
-      <workItem from="1683881495992" duration="141000" />
+      <workItem from="1683881495992" duration="272000" />
+      <workItem from="1683881781447" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1683881516854</created>
