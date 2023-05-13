@@ -5,6 +5,9 @@ fun main() {
     val array2 = intArrayOf(3,6,2)
     val mainArray = arrayOf(array1, array2)
 
+
+
+    
     println("result task one")
     assert(23 == sumOfArray(mainArray))
 
