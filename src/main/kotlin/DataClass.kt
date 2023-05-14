@@ -1,5 +1,5 @@
 import com.sun.source.tree.Tree
-
+/*
 fun main() {
 
     val hannover = Stadt("Hannover")
@@ -38,3 +38,5 @@ data class BinarySearchTree(var root : TreeNode? = null) {
 data class TreeNode (val value : Int, var left : TreeNode? = null, var right:TreeNode? = null){
 
 }
+
+ */
