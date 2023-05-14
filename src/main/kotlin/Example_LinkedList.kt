@@ -1,13 +1,13 @@
 // Class Node which contains a value and a pointer to the next node
-data class Node(val value: Int, val next: Node? = null) {
+data class Node2(val value: Int, val next: Node2? = null) {
     override fun toString(): String =
         "value: $value, next: ${next?.toString() ?: ""}" // if next is null, return empty string
 }
 
 //Class LinkedList which contains a pointer to the head node
-data class LinkedList(var head: Node? = null) {
+data class LinkedList(var head: Node2? = null) {
     fun prepend(value: Int): Unit {
-        head = Node(value, head)
+        head = Node2(value, head)
     }
 
     // This function returns a new LinkedList containing the same elements as the input LinkedList in reverse order

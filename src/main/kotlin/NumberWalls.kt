@@ -2,15 +2,15 @@ import java.util.*
 
 
 fun main() {
-    println(calcNumberWalls(intArrayOf(2,5,4,1))[3][0])
-    println(Arrays.toString(calcNumberWalls(intArrayOf(2,5,4,1))))
+    println(calcNumberWallsTobi(intArrayOf(2,5,4,1))[3][0])
+    println(Arrays.toString(calcNumberWallsTobi(intArrayOf(2,5,4,1))))
 }
 
 
 
 
 
-fun calcNumberWalls(bottomRow : IntArray) :  Array<IntArray> {
+fun calcNumberWallsTobi(bottomRow : IntArray) :  Array<IntArray> {
 
     val numberWall =  Array<IntArray>(bottomRow.size) { intArrayOf() }
     numberWall[0] = bottomRow

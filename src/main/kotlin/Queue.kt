@@ -1,8 +1,6 @@
-/*
 fun main() {
 
 }
-
 data class Queue(val list: LinkedList<Int> = LinkedList()) {
     //Elemente am Ende der Liste anfügen
     fun enqueue(value: Int) {
@@ -54,4 +52,4 @@ data class Queue(val list: LinkedList<Int> = LinkedList()) {
         return true
     }
 }
-*/
+
