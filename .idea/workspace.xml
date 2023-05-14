@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="asd">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NumberWalls.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TobiList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/NumberWallsKtTest.kt" afterDir="false" />
+    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Tobis Magie - Update Funktion umbennant">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Graph.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Arrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Arrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Stack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Stack.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.NumberWallsKt">
+  <component name="RunManager" selected="Kotlin.ArraysKt">
     <configuration name="ArraysKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArraysKt" />
       <module name="Pruefungsvorbereitung" />
@@ -83,8 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.NumberWallsKt" />
         <item itemvalue="Kotlin.ArraysKt" />
+        <item itemvalue="Kotlin.NumberWallsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +97,7 @@
       <workItem from="1683881781447" duration="292000" />
       <workItem from="1683966709604" duration="5916000" />
       <workItem from="1684051794736" duration="357000" />
-      <workItem from="1684053466549" duration="4128000" />
+      <workItem from="1684053466549" duration="6450000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1683881516854</created>
@@ -116,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683881613639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tobis Magie">
+      <created>1684058955950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684058955950</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tobis Magie - Update Funktion umbennant">
+      <created>1684059078140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684059078140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +135,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+    <MESSAGE value="Tobis Magie" />
+    <MESSAGE value="Tobis Magie - Update Funktion umbennant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tobis Magie - Update Funktion umbennant" />
   </component>
 </project>
