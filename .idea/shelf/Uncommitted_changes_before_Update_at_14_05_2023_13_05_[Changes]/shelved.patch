@@ -1,0 +1,171 @@
+Index: src/main/kotlin/Queue.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fun main() {\r\n\r\n}\r\ndata class Queue(val list: LinkedList<Int> = LinkedList()) {\r\n    //Elemente am Ende der Liste anfügen\r\n    fun enqueue(value: Int) {\r\n        list.append(value)\r\n    }\r\n\r\n    //Zeigt erstes Element der Warteschlange\r\n    fun front(): Int {\r\n        if (list.isEmpty()) {\r\n            throw NoSuchElementException(\"Queue ist leer\")\r\n        }\r\n        return list.get(0)\r\n    }\r\n\r\n    //Entfernt erstes Element der Warteschlange\r\n    fun dequeue(): Int {\r\n        if (list.isEmpty()) {\r\n            throw NoSuchElementException(\"Queue ist leer\")\r\n        }\r\n        return list.removeFirst()\r\n    }\r\n\r\n    fun dequeue2(): Int {\r\n        if (list.isEmpty()) {\r\n            throw NoSuchElementException(\"Queue ist leer\")\r\n        }\r\n        return list.remove(0)\r\n    }\r\n\r\n    fun reverseQueue(): Queue {\r\n        val newQueue = Queue()\r\n        while (!list.isEmpty()) {\r\n            newQueue.enqueue(list.removeFirst())\r\n        }\r\n        return newQueue\r\n    }\r\n\r\n    fun isQueueEquals(queue: Queue): Boolean {\r\n        if (list.size() != queue.list.size()) {\r\n            return false\r\n        }\r\n        val tempList = LinkedList(list)\r\n        val tempQueueList = LinkedList(queue.list)\r\n        while (!tempList.isEmpty()) {\r\n            if (tempList.removeFirst() != tempQueueList.removeFirst()) {\r\n                return false\r\n            }\r\n        }\r\n        return true\r\n    }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/Queue.kt b/src/main/kotlin/Queue.kt
+--- a/src/main/kotlin/Queue.kt	(revision ca3ff685426870d911d41acca3f7c805721c93f3)
++++ b/src/main/kotlin/Queue.kt	(date 1684061101861)
+@@ -1,7 +1,8 @@
++/*
+ fun main() {
+ 
+ }
+-data class Queue(val list: LinkedList<Int> = LinkedList()) {
++data class Queue(val list: LinkedListNew = LinkedListNew()) {
+     //Elemente am Ende der Liste anfügen
+     fun enqueue(value: Int) {
+         list.append(value)
+@@ -42,7 +43,7 @@
+         if (list.size() != queue.list.size()) {
+             return false
+         }
+-        val tempList = LinkedList(list)
++        val tempList = LinkedListNew(list)
+         val tempQueueList = LinkedList(queue.list)
+         while (!tempList.isEmpty()) {
+             if (tempList.removeFirst() != tempQueueList.removeFirst()) {
+@@ -53,3 +54,4 @@
+     }
+ }
+ 
++*/
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6b58b9a3-7cf5-4962-a59d-87aa8d451d97\" name=\"Changes\" comment=\"update\">\r\n      <changelist_data name=\"hfw422wihi\" email=\"tobias@hindahl.de\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/Graph_Joey.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Example_LinkedList.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Example_LinkedList.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/LinkedList.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/LinkedList.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/LinkedList3.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/LinkedList3.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Queue.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Queue.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/kotlin/ExpressionTest.kt\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Kotlin Class\" />\r\n        <option value=\"JUnit5 Test Class\" />\r\n        <option value=\"Kotlin File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Pgb5qzihEoC9b81nNXocnG2bDX\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Programmieren\\Semester 1\\KotlinCode\\Vorbereitung Nachschreibeklausur\\Pruefungsvorbereitung2\\src\\test\\kotlin\" />\r\n      <recent name=\"D:\\Programmieren\\Semester 1\\KotlinCode\\Vorbereitung Nachschreibeklausur\\Pruefungsvorbereitung2\\src\\main\\kotlin\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6b58b9a3-7cf5-4962-a59d-87aa8d451d97\" name=\"Changes\" comment=\"\" />\r\n      <created>1683881494251</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1683881494251</updated>\r\n      <workItem from=\"1683881495992\" duration=\"272000\" />\r\n      <workItem from=\"1683881781447\" duration=\"292000\" />\r\n      <workItem from=\"1683965733271\" duration=\"9668000\" />\r\n      <workItem from=\"1684053766304\" duration=\"6348000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"asd\">\r\n      <created>1683881516854</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683881516854</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"asd\">\r\n      <created>1683881613639</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683881613639</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"asd\">\r\n      <created>1683976134757</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683976134757</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"update\">\r\n      <created>1684053977895</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684053977895</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"asd\" />\r\n    <MESSAGE value=\"update\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"update\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ca3ff685426870d911d41acca3f7c805721c93f3)
++++ b/.idea/workspace.xml	(date 1684062351139)
+@@ -4,15 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="update">
+-      <changelist_data name="hfw422wihi" email="tobias@hindahl.de" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Graph_Joey.kt" afterDir="false" />
++    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Update">
++      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HashMap_Joey.kt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Example_LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Example_LinkedList.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedList3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LinkedList3.kt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ExpressionTest.kt" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,6 +24,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PREVIOUS_COMMIT_AUTHORS">
++      <list>
++        <option value="hfw422wihi &lt;tobias@hindahl.de&gt;" />
++      </list>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="2Pgb5qzihEoC9b81nNXocnG2bDX" />
+@@ -81,7 +81,7 @@
+       <workItem from="1683881495992" duration="272000" />
+       <workItem from="1683881781447" duration="292000" />
+       <workItem from="1683965733271" duration="9668000" />
+-      <workItem from="1684053766304" duration="6348000" />
++      <workItem from="1684053766304" duration="7526000" />
+     </task>
+     <task id="LOCAL-00001" summary="asd">
+       <created>1683881516854</created>
+@@ -111,15 +111,41 @@
+       <option name="project" value="LOCAL" />
+       <updated>1684053977895</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Update">
++      <created>1684060973580</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1684060973580</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Update">
++      <created>1684060981728</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1684060981728</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="asd" />
+     <MESSAGE value="update" />
+-    <option name="LAST_COMMIT_MESSAGE" value="update" />
++    <MESSAGE value="Update" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/kotlin/HashMap_Joey.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/HashMap_Joey.kt b/src/main/kotlin/HashMap_Joey.kt
+new file mode 100644
+--- /dev/null	(date 1684061284755)
++++ b/src/main/kotlin/HashMap_Joey.kt	(date 1684061284755)
+@@ -0,0 +1,33 @@
++fun main() {
++    // Erstellen einer Hash Map, um Benutzerdaten zu speichern
++    val userDataMap = HashMap<String, String>()
++
++    // Benutzerdaten hinzufügen
++    userDataMap["Benutzer1"] = "Daten1"
++    userDataMap["Benutzer2"] = "Daten2"
++    userDataMap["Benutzer3"] = "Daten3"
++
++    // Abrufen von Benutzerdaten
++    val user1Data = userDataMap["Benutzer1"]
++    println("Benutzer1 Daten: $user1Data")
++
++    // Überprüfen, ob ein bestimmter Benutzer vorhanden ist
++    val isUser2Exists = userDataMap.containsKey("Benutzer2")
++    println("Benutzer2 vorhanden: $isUser2Exists")
++
++    // Iteration über alle Benutzer und ihre Daten
++    for ((benutzer, daten) in userDataMap) {
++        println("Benutzer: $benutzer, Daten: $daten")
++    }
++
++    // Benutzerdaten aktualisieren
++    userDataMap["Benutzer1"] = "Aktualisierte Daten"
++
++    // Benutzerdaten entfernen
++    userDataMap.remove("Benutzer3")
++
++    // Ausgabe der aktualisierten Benutzerdaten
++    for ((benutzer, daten) in userDataMap) {
++        println("Benutzer: $benutzer, Daten: $daten")
++    }
++}

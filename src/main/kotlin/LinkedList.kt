@@ -11,13 +11,13 @@ data class LinkedList2(var head: Node? = null) {
     }
 
     //Wert hinten anfügen
-    tailrec fun add(value: Int, curNode: Node? = head) {
+    tailrec fun append(value: Int, curNode: Node? = head) {
         if (curNode == null) {
             prepend(value)
         } else if (curNode.nextNode == null) {
             curNode.nextNode = Node(value)
         } else {
-            add(value, curNode.nextNode)
+            append(value, curNode.nextNode)
         }
     }
 
@@ -48,15 +48,6 @@ data class LinkedList2(var head: Node? = null) {
         return false
     }
 
-    fun size(): Int {
-        var curNode = head
-        var size = 0
-        while (curNode != null) {
-            size++
-            curNode = curNode.nextNode
-        }
-        return size
-    }
 
     tailrec fun indexOf(x: Int, curNode: Node? = head, accum: Int = 0): Int {
         if (curNode == null) {
@@ -68,17 +59,24 @@ data class LinkedList2(var head: Node? = null) {
         }
     }
 
-    fun remove(i: Int, curNode: Node? = head, beforeNode: Node? = null, accum: Int = 0) {
-        if (curNode == null || i >= size()) {
-            throw IndexOutOfBoundsException("Leere Liste oder Index nicht in Liste")
-        } else if (i == accum) {
-            if (beforeNode == null) {
-                head = curNode.nextNode
-            } else {
-                beforeNode.nextNode = curNode.nextNode
+    fun remove(value: Int) {
+        var curNode = head
+        var prevNode: Node? = null
+
+        while (curNode != null) {
+            if (curNode.value == value) {
+                if (prevNode == null) {
+                    // Das zu entfernende Element ist das erste Element der Liste
+                    head = curNode.nextNode
+                } else {
+                    // Das zu entfernende Element ist nicht das erste Element
+                    prevNode.nextNode = curNode.nextNode
+                }
+                return
             }
-        } else {
-            remove(i, curNode.nextNode, curNode, accum + 1)
+
+            prevNode = curNode
+            curNode = curNode.nextNode
         }
     }
 }

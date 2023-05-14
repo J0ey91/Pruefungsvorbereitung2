@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Tobis Magie - Update Funktion umbennant">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Graph.kt" afterDir="false" />
+    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Biespiel_Teile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DoubleLinkList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HashMap_Joey.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Arrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Arrays.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +21,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hfw422wihi &lt;tobias@hindahl.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2Pgb5qzihEoC9b81nNXocnG2bDX" />
@@ -47,7 +54,6 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,31 +65,13 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programmieren\Semester 1\KotlinCode\Vorbereitung Nachschreibeklausur\Pruefungsvorbereitung2\src\test\kotlin" />
+      <recent name="D:\Programmieren\Semester 1\KotlinCode\Vorbereitung Nachschreibeklausur\Pruefungsvorbereitung2\src\main\kotlin" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunManager" selected="Kotlin.ArraysKt">
-    <configuration name="ArraysKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysKt" />
-      <module name="Pruefungsvorbereitung" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberWallsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberWallsKt" />
-      <module name="Pruefungsvorbereitung" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.ArraysKt" />
-        <item itemvalue="Kotlin.NumberWallsKt" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,9 +83,8 @@
       <updated>1683881494251</updated>
       <workItem from="1683881495992" duration="272000" />
       <workItem from="1683881781447" duration="292000" />
-      <workItem from="1683966709604" duration="5916000" />
-      <workItem from="1684051794736" duration="357000" />
-      <workItem from="1684053466549" duration="6450000" />
+      <workItem from="1683965733271" duration="9668000" />
+      <workItem from="1684053766304" duration="12917000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1683881516854</created>
@@ -113,30 +100,55 @@
       <option name="project" value="LOCAL" />
       <updated>1683881613639</updated>
     </task>
-    <task id="LOCAL-00003" summary="Tobis Magie">
-      <created>1684058955950</created>
+    <task id="LOCAL-00003" summary="asd">
+      <created>1683976134757</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1684058955950</updated>
+      <updated>1683976134757</updated>
     </task>
-    <task id="LOCAL-00004" summary="Tobis Magie - Update Funktion umbennant">
-      <created>1684059078140</created>
+    <task id="LOCAL-00004" summary="update">
+      <created>1684053977895</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1684059078140</updated>
+      <updated>1684053977895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1684060973580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684060973580</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update">
+      <created>1684060981728</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684060981728</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
-    <MESSAGE value="Tobis Magie" />
-    <MESSAGE value="Tobis Magie - Update Funktion umbennant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tobis Magie - Update Funktion umbennant" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

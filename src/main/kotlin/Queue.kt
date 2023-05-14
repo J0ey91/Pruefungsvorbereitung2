@@ -1,7 +1,8 @@
+/*
 fun main() {
 
 }
-data class Queue(val list: LinkedList<Int> = LinkedList()) {
+data class Queue(val list: LinkedListNew = LinkedListNew()) {
     //Elemente am Ende der Liste anfügen
     fun enqueue(value: Int) {
         list.append(value)
@@ -42,7 +43,7 @@ data class Queue(val list: LinkedList<Int> = LinkedList()) {
         if (list.size() != queue.list.size()) {
             return false
         }
-        val tempList = LinkedList(list)
+        val tempList = LinkedListNew(list)
         val tempQueueList = LinkedList(queue.list)
         while (!tempList.isEmpty()) {
             if (tempList.removeFirst() != tempQueueList.removeFirst()) {
@@ -53,3 +54,4 @@ data class Queue(val list: LinkedList<Int> = LinkedList()) {
     }
 }
 
+*/
