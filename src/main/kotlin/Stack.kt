@@ -1,32 +1,24 @@
-/*
+
 fun main() {
 
 }
-data class Stack (val list : LinkedList<Int> = LinkedList()){
+data class Stack (val list : LinkedListTobi = LinkedListTobi()){
 //Elemente am Anfang der Liste anfügen
     fun push(value : Int){
         list.prepend(value)
     }
 //Zeigt erste Elemente des Stapels
-    fun peek() : Int{
-        return list.get(0)
-    }
-    fun peek2() : Int{
-        return list.first()
+    fun peek() : Int?{
+        return list.head?.value
     }
 //Entfernt erstes Element des Stapels
-    fun pop() : Int{
-        return list.remove(0)
+    fun pop () : Int? {
+        val value = peek()
+        list.removeFirst()
+        return value
     }
-    fun pop2 () : Int{
-        return list.removeFirst()
-    }
-//Gibt Größe des Stapels zurück
-    fun size() : Int{
-        return list.size()
-    }
-//Prüft ob Stapel leer ist
+    //Prüft ob Stapel leer ist
     fun isEmpty() : Boolean{
-        return list.isEmpty()
+        return list.head == null
     }
-}*/
+}

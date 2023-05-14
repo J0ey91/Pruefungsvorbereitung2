@@ -1,8 +1,19 @@
 
 
 fun main() {
-    val array1 = intArrayOf(2,5,4,1)
+    // Arrays müssen gleichlang sein um sie zu Addieren
+
+    val array1 = intArrayOf(2,5,4)
     val array2 = intArrayOf(3,6,2)
+
+    var result = intArrayOf()
+
+    for(i in array1.indices) {
+        result += array1[i] + array2[i]
+    }
+
+    println(result.joinToString())
+
     val mainArray = arrayOf(array1, array2)
 
 
