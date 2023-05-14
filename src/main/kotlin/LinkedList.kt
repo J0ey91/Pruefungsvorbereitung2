@@ -1,4 +1,4 @@
-/*import java.lang.IndexOutOfBoundsException
+import java.lang.IndexOutOfBoundsException
 
 fun main() {
 
@@ -83,6 +83,7 @@ data class LinkedList2(var head: Node? = null) {
     }
 }
 
-data class Node2(val value: Int, var nextNode: Node? = null)
+data class Node(val value: Int, var nextNode: Node? = null){
 
-*/
+}
+
