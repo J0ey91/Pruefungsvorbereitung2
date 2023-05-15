@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Biespiel_Teile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DoubleLinkList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HashMap_Joey.kt" afterDir="false" />
+    <list default="true" id="6b58b9a3-7cf5-4962-a59d-87aa8d451d97" name="Changes" comment="Update22">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DataClassPerson.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HasMap2_Joey.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DataClassOrt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DataClassOrt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1683881495992" duration="272000" />
       <workItem from="1683881781447" duration="292000" />
       <workItem from="1683965733271" duration="9668000" />
-      <workItem from="1684053766304" duration="12917000" />
+      <workItem from="1684053766304" duration="18999000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1683881516854</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684060981728</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update22">
+      <created>1684088931796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684088931796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +154,7 @@
     <MESSAGE value="asd" />
     <MESSAGE value="update" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update22" />
   </component>
 </project>
